@@ -1,7 +1,0 @@
-Add your images here.
-Example:
-- hero.jpg
-- avatar.png
-
-The website currently uses a generated avatar (no image dependency).
-
