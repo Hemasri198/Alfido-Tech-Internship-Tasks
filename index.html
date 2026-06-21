@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Static Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark" aria-hidden="true">◆</span>
+        <span class="brand-text">Hemasri Bandi</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          Menu
+        </button>
+        <ul class="nav-list" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="pill">Front-End Developer • HTML/CSS/JS</div>
+          <h1>
+            Build fast, responsive
+            <span class="gradient-text">static experiences</span>.
+          </h1>
+          <p class="lead">
+            This is a simple static website starter: clean layout, smooth scrolling,
+            and a tiny interactive project filter.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="stats" role="list" aria-label="Highlights">
+            <div class="stat" role="listitem">
+              <div class="stat-value" data-count="12">0</div>
+              <div class="stat-label">UI Components</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-value" data-count="8">0</div>
+              <div class="stat-label">Mini Projects</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat-value" data-count="100">0</div>
+              <div class="stat-label">% Static</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Profile card">
+          <div class="avatar" aria-hidden="true">
+            <span>Y</span>
+          </div>
+          <h2>Hi, I’m Hemasri Bandi</h2>
+          <p>
+            Enthusiastic Information Technology student graduating in 2027. Skilled in Web Development, Google
+Cloud, Generative AI, MySQL, and Power BI, with hands-on experience gained through projects,
+internships, and industry certifications. Strong problem-solving abilities, adaptability, and a passion
+for technology
+          </p>
+          <div class="card-row">
+            <span class="muted">Location</span>
+            <span>Hyderabad, india</span>
+          </div>
+          <div class="card-row">
+            <span class="muted">Focus</span>
+            <span>Responsive UI</span>
+          </div>
+          <div class="card-row">
+            <span class="muted">Tools</span>
+            <span>HTML • CSS • JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p>
+            A short bio and the tech you use. This layout is intentionally simple.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <article class="feature">
+            <h3>Clean design</h3>
+            <p>
+              Modern typography, spacing, and a consistent component style.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Responsive layout</h3>
+            <p>
+              Mobile-first structure with accessible navigation.
+            </p>
+          </article>
+          <article class="feature">
+            <h3>Small interactions</h3>
+            <p>
+              JavaScript powers counting, filtering, and active link highlighting.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p>
+            Click a category to filter. (Edit the list items in <code>projects</code>.)
+          </p>
+        </div>
+
+        <div class="filterbar" role="toolbar" aria-label="Project filters">
+          <button class="filter-btn is-active" type="button" data-filter="all">All</button>
+          <button class="filter-btn" type="button" data-filter="ui">UI</button>
+          <button class="filter-btn" type="button" data-filter="landing">Landing</button>
+          <button class="filter-btn" type="button" data-filter="js">JavaScript</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <article class="project" data-tags="ui">
+            <h3>UI Cards</h3>
+            <p>Reusable card layout with hover and consistent spacing.</p>
+            <div class="tags"><span>tag</span><span>ui</span></div>
+          </article>
+          <article class="project" data-tags="landing ui">
+            <h3>Landing Page</h3>
+            <p>A clean hero + sections + call to action.</p>
+            <div class="tags"><span>tag</span><span>landing</span></div>
+          </article>
+          <article class="project" data-tags="js">
+            <h3>Mini Quiz</h3>
+            <p>Simple question flow and scoring in vanilla JS.</p>
+            <div class="tags"><span>tag</span><span>js</span></div>
+          </article>
+          <article class="project" data-tags="ui js">
+            <h3>Interactive Dashboard</h3>
+            <p>Client-side filtering and animated counters.</p>
+            <div class="tags"><span>tag</span><span>ui</span></div>
+          </article>
+          <article class="project" data-tags="landing">
+            <h3>Product Page</h3>
+            <p>Simple pricing and feature grid for a product.</p>
+            <div class="tags"><span>tag</span><span>landing</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p>
+            This form is front-end only (no backend). Replace the behavior as needed.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contact-form">
+            <label>
+              <span>Name</span>
+              <input name="name" type="text" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+            </label>
+            <button class="btn" type="submit">Send Message</button>
+            <p class="form-note" id="form-note" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-card" aria-label="Contact details">
+            <h3>Let’s build something</h3>
+            <p class="muted">
+              Add your email, social links, and availability here.
+            </p>
+            <ul class="contact-list">
+              <li><strong>Email:</strong> you@example.com</li>
+              <li><strong>Phone:</strong> +00 000 000 000</li>
+              <li><strong>Location:</strong> City, Country</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="muted">© <span id="year"></span> Your Name. All rights reserved.</div>
+      <div class="footer-links">
+        <a href="#home">Top</a>
+        <span class="dot" aria-hidden="true">•</span>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
